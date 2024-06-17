@@ -1,6 +1,14 @@
-
-export default function Home() {
+import { UserButton } from "@clerk/nextjs";
+export default function page() {
   return (
-    <h1 className="text-purple-500 font-bold" >starting</h1>
+    <>
+    <div>
+      <h1>Dashboard
+      </h1>
+      <UserButton afterSignOutUrl="/" />
+        
+      
+    </div>
+    </>
   );
 }
