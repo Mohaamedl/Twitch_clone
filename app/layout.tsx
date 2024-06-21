@@ -1,6 +1,6 @@
 import { ThemeProvider } from "@/components/theme-provider";
 import { ClerkProvider } from "@clerk/nextjs";
-import { dark } from "@clerk/themes";
+import { neobrutalism, shadesOfPurple } from "@clerk/themes";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -17,13 +17,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider appearance={{baseTheme:dark}}>
+    <ClerkProvider 
+    
+     appearance={{baseTheme:[neobrutalism,shadesOfPurple]}}>
     <html lang="en">
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
           forcedTheme="dark"
-          storageKey="Gamelive-theme"
+          storageKey="GameLive-theme"
         >
           {children}
           </ThemeProvider>
