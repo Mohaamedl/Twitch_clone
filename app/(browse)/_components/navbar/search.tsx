@@ -7,6 +7,14 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 export const Search = () => {
+     /**
+     * Function component representing a search input field with search and clear functionality.
+     * 
+     * This component utilizes the useRouter hook from Next.js for navigation and the useState hook for managing state.
+     * It includes an input field for entering search terms, a search button to submit the search query, and a clear button to reset the input field.
+     * 
+     * @returns JSX.Element
+     */
     const router = useRouter();
     const [value,setValue] = useState("");
     const onSubmit = (e:React.FormEvent<HTMLFormElement>)=> {
