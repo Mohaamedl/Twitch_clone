@@ -5,8 +5,10 @@ import { getRecommended } from "@/lib/recommendation_service"
 
 export const Sidebar = async () => {
     let recommended;
+    
     try {
         recommended = await getRecommended();
+        
     } catch (error) {
         console.error("Failed to fetch recommendations:", error);
         
