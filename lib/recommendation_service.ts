@@ -1,6 +1,6 @@
 
-import { getSelf } from "./auth_service";
-import { db } from "./db";
+import { getSelf } from "@/lib/auth_service";
+import { db } from "@/lib/db";
 export const getRecommended = async ()=> {
     let userId;
     try {
