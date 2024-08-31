@@ -28,7 +28,7 @@ export const  Recommended = ({
             </p>
         </div>
         )}
-        <ul className="grid space-y-2 px-2">
+        <ul className="space-y-2 px-2">
             {data.map((user) => (
                 <UserItem 
                 key={user.id}
