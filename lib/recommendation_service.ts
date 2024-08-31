@@ -1,3 +1,4 @@
+
 import { db } from "./db";
 import { getSelf } from "./auth_service";
 export const getRecommended = async ()=> {
@@ -6,5 +7,6 @@ export const getRecommended = async ()=> {
             createdAt : "desc"
         },
     });
+
     return users;
 }
