@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    
     reactStrictMode:true,
     eslint:{
 
@@ -13,7 +14,8 @@ const nextConfig = {
                 pathname:"/**",
             }
         ]
-    }
+    },
+    
 };
 
 export default nextConfig;
