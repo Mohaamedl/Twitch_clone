@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { ToggleSkeleton } from "./toggle";
 import { useIsClient } from "usehooks-ts";
 import { RecommendedSkeleton } from "./recommended";
+import { FollowingSkeleton } from "./following";
 interface WrapperProps {
 
 children: React.ReactNode;
@@ -31,6 +32,7 @@ export const Wrapper=(
                 
             )}>
                 <ToggleSkeleton/>
+                <FollowingSkeleton/>
                 <RecommendedSkeleton/>
 
             </aside>
