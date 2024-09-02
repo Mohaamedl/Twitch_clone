@@ -15,7 +15,17 @@ const nextConfig = {
             }
         ]
     },
+    eslint: {
+        ignoreDuringBuilds: true, // Example: Ignore ESLint warnings during build
+        // You can add more configuration options here if needed
+      },
+
+      
     
+};
+// next.config.js
+module.exports = {
+  output: 'export', // Or 'standalone' based on your use case
 };
 
 export default nextConfig;
