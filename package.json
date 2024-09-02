@@ -1,15 +1,16 @@
 {
-  "name": "twitch",
-  "version": "0.1.0",
   "private": true,
+  "name": "twitch-clone",
+  "version": "0.1.0",
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test:unit": "mocha -r ts-node/register test/unit/**/*.test.ts",
+    "test:unit": "mocha -r ts-node/register -r tsconfig-paths/register 'test/unit/**/*.ts'",
     "test:integration": "mocha -r ts-node/register test/integration/**/*.test.ts",
-    "test:system": "mocha test/system/**/*.test.js",
+    "test:system": "mocha test/system/**/*.test.ts",
     "docs": "typedoc"
   },
   "dependencies": {
@@ -52,6 +53,7 @@
     "selenium-webdriver": "^4.24.0",
     "tailwindcss": "^3.4.1",
     "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
     "typedoc": "^0.26.6",
     "typedoc-plugin-markdown": "^4.2.6",
     "typescript": "^5"
