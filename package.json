@@ -7,6 +7,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "postinstall": "prisma generate" ,
     "lint": "next lint",
     "test:unit": "mocha -r ts-node/register -r tsconfig-paths/register 'test/unit/**/*.ts'",
     "test:integration": "mocha -r ts-node/register test/integration/**/*.test.ts",
