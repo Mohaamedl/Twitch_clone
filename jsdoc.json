@@ -1,0 +1,10 @@
+{
+  "source": {
+    "include": ["app", "components", "lib"],
+    "includePattern": ".tsx?$",
+    "excludePattern": "(node_modules/|docs)"
+  },
+  "opts": {
+    "destination": "./docs"
+  }
+}

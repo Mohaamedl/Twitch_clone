@@ -1,3 +1,7 @@
+**twitch** • [**Docs**](modules.md)
+
+***
+
 # Twitch Clone
 
 A modern web application that replicates core features of Twitch, built with Next.js, React, and Prisma.

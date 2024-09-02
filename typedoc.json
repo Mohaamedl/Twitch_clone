@@ -1,0 +1,8 @@
+{
+    "entryPoints": ["app", "components", "lib"],
+    "entryPointStrategy": "expand",
+    "out": "docs",
+    "exclude": ["**/node_modules/**", "**/test/**"],
+    "plugin": ["typedoc-plugin-markdown"],
+    "tsconfig": "tsconfig.json"
+  }
