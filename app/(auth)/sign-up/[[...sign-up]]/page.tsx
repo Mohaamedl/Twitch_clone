@@ -7,7 +7,7 @@ export async function generateStaticParams() {
     ];
 }
 
-export default function SignUpPage() {
+export default function Page() {
     return (
         <SignUp />
     );
