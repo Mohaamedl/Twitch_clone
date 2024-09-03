@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    
     reactStrictMode:true,
     eslint:{
 
@@ -14,16 +13,7 @@ const nextConfig = {
                 pathname:"/**",
             }
         ]
-    },
-    eslint: {
-        ignoreDuringBuilds: true, // Example: Ignore ESLint warnings during build
-        // You can add more configuration options here if needed
-      },
-      
-
-      
-    
+    }
 };
-
 
 export default nextConfig;
