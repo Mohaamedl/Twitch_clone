@@ -19,7 +19,7 @@ const nextConfig = {
         ignoreDuringBuilds: true, // Example: Ignore ESLint warnings during build
         // You can add more configuration options here if needed
       },
-      output: 'export',
+      
 
       
     
